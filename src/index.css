@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    /* overflow-x: hidden; */
+}
+body{
+    border: 2px solid red;
+}
+
+.bg-image {
+    background-image: url('./assets/KK-Tech-e1703789050955.jpg');
+
+}
+
+.bg-image-2 {
+    background-image: url('./assets/222.webp');
+
+}
+
+.propertise {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit:scale-down;
+}
+

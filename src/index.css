@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 #root {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
-body{
-    border: 2px solid red;
-}
+
 
 .bg-image {
     background-image: url('./assets/KK-Tech-e1703789050955.jpg');

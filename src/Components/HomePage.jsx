@@ -107,9 +107,12 @@ function HomePage() {
                             <HashLink to='contact'smooth='true' duration='500' >
                                 CONATCT ME</HashLink></span>
                         </div>
+
                         <div className='justify-center items-center lg:hidden flex'>
                             <div onClick={handleMobilenav}>
-                                <i class="fa-solid fa-bars  fa-2xl text-white"></i>
+                                {mobilenav ?<i class="fa-solid fa-x fa-2xl"></i>
+                                :
+                                <i class="fa-solid fa-bars  fa-2xl text-white"></i>}
                                 <span className='text-lg pl-5'>Menu</span>
                             </div>
 
@@ -122,18 +125,18 @@ function HomePage() {
 
                     {mobilenav ?
                         <div className='bg-white text-black w-full flex flex-col text-center'>
-                             <span className='hover:text-yellow-400 cursor-pointer'>
+                             <span className='hover:text-yellow-400 cursor-pointer p-5 border-b-[1px]'>
                                 <HashLink to='home'smooth='true' duration='500' >
                                 HOME
                                 </HashLink>
                             </span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <span className='hover:text-yellow-400 cursor-pointer p-5 border-b-[1px]'>
                             <HashLink to='pack'smooth='true' duration='500' >
                                 CHOOSE YOUR PACK</HashLink></span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <span className='hover:text-yellow-400 cursor-pointer p-5 border-b-[1px]'>
                             <HashLink to='pricing'smooth='true' duration='500' >
                                 PRICING</HashLink></span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <span className='hover:text-yellow-400 cursor-pointer p-5 border-b-[1px]'>
                             <HashLink to='contact'smooth='true' duration='500' >
                                 CONATCT ME</HashLink></span>
                         </div> : null}

@@ -54,7 +54,7 @@ function HomePage() {
                             <div className='space-x-2'>
 
                                 <i class="fa-solid fa-phone"></i>
-                                <span> +111 22 33 444 </span>
+                                <span> +91 82997 28943  </span>
                             </div>
                             <div className='space-x-2'>
 
@@ -388,13 +388,14 @@ function HomePage() {
                         </p>
                         <div className='flex flex-col justify-center items-center gap-y-3 pt-6'>
                             <div className='rounded-full w-[100px] h-[100px]'>
-                                <img className='rounded-full' src={testiPeople} alt="user" />
+                            <i class="fa-solid fa-user"></i>
+                                {/* <img className='rounded-full' src={testiPeople} alt="user" /> */}
                             </div>
                             <div className='text-center'>
                                 <p className='uppercase text-lg'>
-                                    BIANCA MITCHEL</p>
+                                shivendra Mishra</p>
                                 <p className='uppercase text-sm text-yellow-400'>
-                                    Fitness Model
+                                    -
                                 </p>
                             </div>
                         </div>
@@ -462,25 +463,25 @@ function HomePage() {
                     <div className='pt-20 space-y-16'>
                         <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <i class="fa-solid fa-location-dot text-[#7D2C6E] fa-2xl"></i>
-                            <p className='text-xl text-center'>NY, Street Name,<br />
-                                New York – 54785</p>
+                            <p className='text-xl text-center'>MM255 Chandralok Colony <br />
+                            Purania Chauraha Lucknow</p>
                         </div>
                         <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <i class="fa-solid fa-phone text-[#7D2C6E] fa-2xl"></i>
-                            <p className='text-xl text-center'>(01) 22-33-444<br />
-                                (01) 55-66-777</p>
+                            <p className='text-xl text-center'>+91 82997 28943 <br />
+                            +91 82997 28943 </p>
                         </div>
                         <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <i class="fa-solid fa-envelope text-[#7D2C6E] fa-2xl"></i>
-                            <p className='text-xl text-center'>info@youroceanwpsite.com<br />
-                                home@youroceanwp.com</p>
+                            <p className='text-xl text-center'>shivendra.kktech@gmail.com<br />
+                            shivendra.kktech@gmail.com</p>
                         </div>
 
                     </div>
                 </div>
             </footer>
-            <div className='text-sm text-[#3d3d3d] bg-[#f5f5f5] py-5 text-center font-semibold'>
-                2024 MUSCLED UP WITH OCEANWP
+            <div className='text-sm capitalize text-[#3d3d3d] bg-[#f5f5f5] py-5 text-center font-semibold'>
+                2024 get taught with us
             </div>
         </>
     )

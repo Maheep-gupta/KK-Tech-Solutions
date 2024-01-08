@@ -8,7 +8,7 @@ import sdt from '../assets/sdt.jpeg'
 import sd from '../assets/sd.jpeg'
 import trainingCourses from '../assets/Courses.png'
 import '../index.css'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link, Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 import { motion, useAnimation } from "framer-motion";
 
@@ -79,7 +79,7 @@ function HomePage() {
                 </div>
             </div>
             {/* KK heading */}
-            <section className='bg-image propertise max-w-screen h-screen max-h-screen text-white lg:bg-fixed bg-local  '>
+            <section id='home' className='bg-image propertise max-w-screen h-screen max-h-screen text-white lg:bg-fixed bg-local  '>
                 <div className='bg-black h-full w-full opacity-[0.5]'>
                 </div>
                 <div className='relative -top-full mt-2 cursor-pointer'>
@@ -91,10 +91,20 @@ function HomePage() {
                             </div>
                         </div>
                         <div className='text-white space-x-5 justify-center items-center text-sm font-bold lg:flex hidden '>
-                            <span className='hover:text-yellow-400 cursor-pointer'>HOME</span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>CHOOSE YOUR PACK</span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>PRICING</span>
-                            <span className='hover:text-yellow-400 cursor-pointer'>CONATCT ME</span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                                <Link to='home'smooth='true' duration='500' >
+                                HOME
+                                </Link>
+                            </span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='pack'smooth='true' duration='500' >
+                                CHOOSE YOUR PACK</Link></span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='pricing'smooth='true' duration='500' >
+                                PRICING</Link></span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='contact'smooth='true' duration='500' >
+                                CONATCT ME</Link></span>
                         </div>
                         <div className='justify-center items-center lg:hidden flex'>
                             <div onClick={handleMobilenav}>
@@ -111,10 +121,20 @@ function HomePage() {
 
                     {mobilenav ?
                         <div className='bg-white text-black w-full flex flex-col text-center'>
-                            <span className='hover:text-yellow-400 cursor-pointer py-5 border-b-2'>HOME</span>
-                            <span className='hover:text-yellow-400 cursor-pointer py-5 border-b-2'>CHOOSE YOUR PACK</span>
-                            <span className='hover:text-yellow-400 cursor-pointer py-5 border-b-2'>PRICING</span>
-                            <span className='hover:text-yellow-400 cursor-pointer py-5'>CONATCT ME</span>
+                             <span className='hover:text-yellow-400 cursor-pointer'>
+                                <Link to='home'smooth='true' duration='500' >
+                                HOME
+                                </Link>
+                            </span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='pack'smooth='true' duration='500' >
+                                CHOOSE YOUR PACK</Link></span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='pricing'smooth='true' duration='500' >
+                                PRICING</Link></span>
+                            <span className='hover:text-yellow-400 cursor-pointer'>
+                            <Link to='contact'smooth='true' duration='500' >
+                                CONATCT ME</Link></span>
                         </div> : null}
 
                 </div>
@@ -128,6 +148,7 @@ function HomePage() {
                 </div>
 
             </section >
+
             <section className='flex flex-col h-full justify-center items-center text-center  mt-24 mb-10'>
                 <div className='max-w-[1100px]'>
 
@@ -405,7 +426,7 @@ function HomePage() {
 
 
 
-            <section className=' bg-white py-20 flex justify-center items-center'>
+            <section id='pricing' className=' bg-white py-20 flex justify-center items-center'>
                 <div className='max-w-[1140px] w-full flex justify-center flex-col items-center'>
 
                     <p className='uppercase text-4xl font-bold'>
@@ -451,7 +472,7 @@ function HomePage() {
 
 
 
-            <footer className=' bg-white flex flex-col items-center pt-20 mb-10 '>
+            <footer id='contact' className=' bg-white flex flex-col items-center pt-20 mb-10 '>
                 <p className='uppercase text-4xl font-bold pb-0 lg:pb-16'>Keep in touch!</p>
                 <div className='max-w-[1140px] flex'>
 

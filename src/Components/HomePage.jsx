@@ -8,7 +8,8 @@ import sdt from '../assets/sdt.jpeg'
 import sd from '../assets/sd.jpeg'
 import trainingCourses from '../assets/Courses.png'
 import '../index.css'
-import { Link, Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom'
+import {  Link as HashLink, animateScroll as scroll } from 'react-scroll';
 
 import { motion, useAnimation } from "framer-motion";
 
@@ -92,19 +93,19 @@ function HomePage() {
                         </div>
                         <div className='text-white space-x-5 justify-center items-center text-sm font-bold lg:flex hidden '>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                                <Link to='home'smooth='true' duration='500' >
+                                <HashLink to='home'smooth='true' duration='500' >
                                 HOME
-                                </Link>
+                                </HashLink>
                             </span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='pack'smooth='true' duration='500' >
-                                CHOOSE YOUR PACK</Link></span>
+                            <HashLink to='pack'smooth='true' duration='500' >
+                                CHOOSE YOUR PACK</HashLink></span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='pricing'smooth='true' duration='500' >
-                                PRICING</Link></span>
+                            <HashLink to='pricing'smooth='true' duration='500' >
+                                PRICING</HashLink></span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='contact'smooth='true' duration='500' >
-                                CONATCT ME</Link></span>
+                            <HashLink to='contact'smooth='true' duration='500' >
+                                CONATCT ME</HashLink></span>
                         </div>
                         <div className='justify-center items-center lg:hidden flex'>
                             <div onClick={handleMobilenav}>
@@ -122,19 +123,19 @@ function HomePage() {
                     {mobilenav ?
                         <div className='bg-white text-black w-full flex flex-col text-center'>
                              <span className='hover:text-yellow-400 cursor-pointer'>
-                                <Link to='home'smooth='true' duration='500' >
+                                <HashLink to='home'smooth='true' duration='500' >
                                 HOME
-                                </Link>
+                                </HashLink>
                             </span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='pack'smooth='true' duration='500' >
-                                CHOOSE YOUR PACK</Link></span>
+                            <HashLink to='pack'smooth='true' duration='500' >
+                                CHOOSE YOUR PACK</HashLink></span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='pricing'smooth='true' duration='500' >
-                                PRICING</Link></span>
+                            <HashLink to='pricing'smooth='true' duration='500' >
+                                PRICING</HashLink></span>
                             <span className='hover:text-yellow-400 cursor-pointer'>
-                            <Link to='contact'smooth='true' duration='500' >
-                                CONATCT ME</Link></span>
+                            <HashLink to='contact'smooth='true' duration='500' >
+                                CONATCT ME</HashLink></span>
                         </div> : null}
 
                 </div>
@@ -144,7 +145,12 @@ function HomePage() {
                     <p>KK TECH</p>
                     <p>SOLUTION</p>
 
-                    <button className='uppercase text-lg bg-[#A64193] px-[40px] py-[18px] hover:bg-white hover:text-[#A64193] rounded-lg'>register now</button>
+                    <button className='uppercase text-lg bg-[#A64193] px-[40px] py-[18px] hover:bg-white hover:text-[#A64193] rounded-lg'>
+                        <Link to='/register'>
+
+                        Register Now
+                        </Link>
+                        </button>
                 </div>
 
             </section >

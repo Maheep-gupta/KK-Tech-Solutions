@@ -88,7 +88,7 @@ function HomePage() {
                     <div className='flex justify-around lg:bg-transparent bg-[#333]'>
 
                         <div className='h-28 '>
-                            <div className='logo h-full flex justify-center items-center w-52 md:w-80'>
+                            <div className='logo h-full flex justify-center items-center w-64 md:w-80'>
                                 <img src={logo} alt='logo' />
                             </div>
                         </div>

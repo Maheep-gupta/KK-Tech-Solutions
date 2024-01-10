@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../index.css'
-import logo from '../assets/KK-LOGo.png'
+import logo from '../assets/KK LOGO.png'
+
 import fullStackIamge from '../assets/Full-Stack-Developer.jpg'
 import testiPeople from '../assets/owp-people-6.jpg'
 import dataScience from '../assets/datascience.webp'
@@ -499,7 +500,7 @@ function HomePage() {
                         <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <i class="fa-solid fa-phone text-[#7D2C6E] fa-2xl"></i>
                             <p className='text-xl text-center'>+91 82997 28943 <br />
-                            +91 82997 28943 </p>
+                            +91 89533 34065 </p>
                         </div>
                         <div className='flex flex-col gap-y-4 justify-center items-center'>
                             <i class="fa-solid fa-envelope text-[#7D2C6E] fa-2xl"></i>
